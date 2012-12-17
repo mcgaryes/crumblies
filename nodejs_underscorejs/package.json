@@ -1,0 +1,8 @@
+{
+	"name": "crumblies-nodejs_underscorejs",
+	"version":"0.0.1",
+	"private": true,
+	"dependencies": {
+		"underscore": "1.4.3"
+	}
+}
