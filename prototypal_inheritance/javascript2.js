@@ -26,7 +26,7 @@ var extend = function(attributes){
 
 // create Item class
 var Item = function(attributes){
-	for(var attribute in attributes) this[attribute] = attributes[attribute];
+	mixin(this,attributes);
 }
 
 // create the Item's prototype
@@ -39,12 +39,12 @@ Item.prototype = {
 
 // create Group class which in itself is inherently an Item
 var Group = function(attributes){
-	// need to mix the Group's prototype with the Item's prototype
-	for(var attribute in attributes) this[attribute] = attributes[attribute];
+	mixin(this,attributes);
 }
 
 // create Group's prototype
 Group.prototype = mixin({
+	name:"AbstractGroup",
 	itemsSayHello:function(){
 		if(!this.items)
 		{
@@ -59,8 +59,7 @@ Group.prototype = mixin({
 
 // create InheritedGroup
 var InheritedGroup = function(attributes){
-	// need to mix the Group's prototype with the Item's prototype
-	for(var attribute in attributes) this[attribute] = attributes[attribute];
+	mixin(this,attributes);
 }	
 
 // create Group's prototype
