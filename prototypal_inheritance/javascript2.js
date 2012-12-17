@@ -12,7 +12,7 @@ var mixin = function(destination, source) {
 	return destination; 
 }
 
-var extend = function(attributes,options){
+var extend = function(attributes){
 	var parent = this;
 	var child;
 	child = function(){ parent.apply(this, arguments); };
@@ -61,12 +61,17 @@ Group.prototype = mixin({
 var InheritedGroup = function(attributes){
 	// need to mix the Group's prototype with the Item's prototype
 	for(var attribute in attributes) this[attribute] = attributes[attribute];
-}
+}	
 
 // create Group's prototype
 InheritedGroup.prototype = mixin({
 	itemsSayHello:function(){
 		console.log("no");
+	},
+	sayHello:function(){
+		console.log("\n");
+		Group.prototype.sayHello.call(this);
+		console.log("\n");
 	}
 },Group.prototype);
 
