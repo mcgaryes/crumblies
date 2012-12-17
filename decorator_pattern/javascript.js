@@ -1,14 +1,18 @@
-// create my class
+// create Vehicle
 var Vehicle = function(attributes){
+
+	// add our attributes to this instance
 	for(var attribute in attributes) {
 		this[attribute] = attributes[attribute];
 	}
 
+	// lets decorate
 	if(this.speed == "knots") Boat(this);
 	else if (this.speed == "mach") Plane(this);
 	else if (this.speed == "mph") Car(this);
 }
 
+// add some default behavior to the Vehicle class's prototype
 Vehicle.prototype = {
 	countWheels:function(){
 		console.log("This vehicle has " + this.numWheels + " wheels.");
