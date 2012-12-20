@@ -1,14 +1,15 @@
-// # Live Code View #
-// **http://jsbin.com/acuxef/2/edit**
-
+// # Source Code
+// * [GitHub](https://github.com/mcgaryes/crumblies/blob/master/js101/lessons/001_prototypal-inheritance.js)
+// * [JSBin](http://jsbin.com/acuxef/2/edit)
+// # Overview
 // JavaScript uses prototypes instead of classes for inheritance. It is possible to simulate many class-based features with prototypes in JavaScript. 
 
 // Functions double as object constructors along with their typical role. Prefixing a function call with `new` creates a new object and makes available any proertys on the constructors prototype object.
 
 // In this lesson we're going to look at an example, however contrived, of the constructor/prototype relationship in order to better understand how inheritence works with multiple instances of a prototype.
 
+// # Lesson
 "use strict";
-
 // Like stated above, constructors (functions) and be associated with a object. Here we create our `Vehicle` constructor and give it a single argument of `attributes`. Depending on how many arguments you think you'll pass when instantiating a `Vehicle` object you can reference as many arguments as you'd like here. I find that having a single argument of type `Object` is easier to read and more flexible later if you decide that you need to pass another object to the Constructor.
 var Vehicle = function(attributes){
 	
