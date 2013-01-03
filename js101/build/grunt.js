@@ -7,13 +7,13 @@ module.exports = function(grunt) {
         lint: {
             files: [
                 'grunt.js', 
-                '../lessons/*.js'
+                '../discussions/*.js'
             ]
         },
         docco: {
             debug: {
                 src: [
-                    '../lessons/001/*.js'
+                    '../discussions/001/*.js'
                 ],
                 options: {
                     output: '../docs/'
