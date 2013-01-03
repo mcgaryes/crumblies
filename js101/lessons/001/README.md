@@ -10,7 +10,7 @@ In this lesson we're going to look at an example of the constructor/prototype re
 
 ### Resources
 
-* [Annotated Source Code]()
+* [Annotated Source Code](http://emcgary.r1l4b.com/lessons/001_prototypal-inheritance.html)
 * [GitHub](https://github.com/mcgaryes/crumblies/blob/master/js101/lessons/001_prototypal-inheritance.js)
 * [JSBin](http://jsbin.com/acuxef/4/edit)
 
