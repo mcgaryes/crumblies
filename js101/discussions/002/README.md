@@ -1,4 +1,4 @@
-# Discussion 001 - Prototypal Inheritence
+# Discussion 002 - Extending Prototypes
 
 ### Overview
 
