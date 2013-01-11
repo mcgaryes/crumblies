@@ -8,8 +8,9 @@ This discussion does not discuss the concept of JavaScript "mixins", the practic
 
 ### Discussion Questions
 
-* How would you possibly go about using this functionality in non-supported browsers?
-* How else could you possibly extend one prototype with another?
+* How would you possibly go about using this functionality in legacy browsers?
+* How else could you possibly extend one prototype with another (without Object.create)?
+* Could you ever see a benifit of using this type of functionality on native JavaScript?
 * Have you ever used this type of functionality in any of your projects?
 
 ### Further Reading
