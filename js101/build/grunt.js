@@ -13,7 +13,8 @@ module.exports = function(grunt) {
         docco: {
             debug: {
                 src: [
-                    '../discussions/001/*.js'
+                    '../discussions/001/*.js',
+                    '../discussions/002/*.js'
                 ],
                 options: {
                     output: '../docs/'
