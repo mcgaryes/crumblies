@@ -5,17 +5,11 @@ module.exports = function(grunt) {
 	// config
     grunt.initConfig({
         lint: {
-            files: [
-                'grunt.js', 
-                '../discussions/*.js'
-            ]
+            files: ['grunt.js','../discussions/**/*.js']
         },
         docco: {
             debug: {
-                src: [
-                    '../discussions/001/*.js',
-                    '../discussions/002/*.js'
-                ],
+                src: ['../discussions/**/*.js'],
                 options: {
                     output: '../docs/'
                 }
