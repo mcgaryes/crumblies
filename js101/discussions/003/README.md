@@ -14,7 +14,7 @@ We'll continue using the `Object.create` and `Function.call` methods and add in 
 
 1. [Array.forEach](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/forEach)
 * [Object.keys](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Object/keys)
-* 
+
 ### Resources
 
 * [Annotated Source Code](http://emcgary.r1l4b.com/discussions/003_prototype-mixins.html)
