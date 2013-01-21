@@ -1,4 +1,4 @@
-# Discussion 002 - Prototype Mixins
+# Discussion 003 - Prototype Mixins
 
 ### Overview
 
