@@ -1,0 +1,16 @@
+http://localhost:8888?root="data"&count=10&structure={"intKey":"int|1-100","geoKey":"geo","imgKey":"img|20-300|20-300","uidKey":"uid","floatKey":"float|0-1","objKey":{"geoKey":"geo","imgKey":"img|20-300|20-300","uidKey":"uid","floatKey":"float|0-1"}}
+
+http://localhost:8888?root=data&count=10&structure={"intKey":"int|1-100","geoKey":"geo","imgKey":"img|20-300|20-300","uidKey":"uid","floatKey":"float|0-1"}
+
+
+http://localhost:8888?root=data&count=300&structure={"intKey":"int|1-100"}
+
+http://localhost:8888?root="data"&structure={ "floatKey":"float|1.25-3.55" }
+
+http://localhost:8888?root="data"&structure={ "geoKey":"geo" }
+
+http://localhost:8888?root="data"&structure={ "uidKey":"uid" }
+
+http://localhost:8888?root="data"&structure={"imgKey":"img|20-300|20-300"}
+
+http://localhost:8888?root=data&structure={"objKey":{"intKey":"int|1-100"}}

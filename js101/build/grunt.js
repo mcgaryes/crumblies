@@ -9,7 +9,12 @@ module.exports = function(grunt) {
         },
         docco: {
             debug: {
-                src: ['../discussions/**/*.js'],
+                src: [
+                    '../discussions/001/*.js',
+                    '../discussions/002/*.js',
+                    '../discussions/003/003_prototype_mixins.js',
+                    '../discussions/004/004_chaining.js',
+                ],
                 options: {
                     output: '../docs/'
                 }
@@ -21,7 +26,7 @@ module.exports = function(grunt) {
                 eqeqeq: true,
                 immed: true,
                 latedef: true,
-                newcap: true,
+                newcap: false,
                 noarg: true,
                 sub: true,
                 undef: true,
