@@ -20,6 +20,6 @@ This starts off the chain with an array of DOM elements matching the selector. I
 
 ### Resources
 
-* [Annotated Source Code](http://emcgary.r1l4b.com/discussions/003_chaining.html)
+* [Annotated Source Code](http://emcgary.r1l4b.com/discussions/004_chaining.html)
 * [GitHub](https://github.com/mcgaryes/crumblies/blob/master/js101/discussions/004/)
 * [JSBin](http://jsbin.com/uqetes/1/edit)
