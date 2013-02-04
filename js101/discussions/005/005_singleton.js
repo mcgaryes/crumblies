@@ -10,9 +10,6 @@
 	// Creating a root variable here is just a bit of best practice. Referencing a lot through the `this` keyword can get confusing in longer scripts. I find its always a good idea to assigning what we've passed in as the context of this self executing function to root. This way whenever you see `root` you know exactly what it is refering to!
 	var root = this;
 
-	// here we're writing our `Singleton` object to root object
-	// in browser this is the window
-	// in node it would be ???
 	// And here we're simply going to write our singleton object `Singleton` to the `root` (window) object. And that's it really! You esentially now have a singleton object.
 	var Singleton = root.Singleton = {
 		property: true,
