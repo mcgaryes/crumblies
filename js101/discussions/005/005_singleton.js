@@ -93,13 +93,12 @@ console.log(this.AnotherSingleton.test); // logs `undefined`
 // One last thing to mention is that the way in which we are creating these singletons, we could limit what is actually returned and available publicly.
 var Namespace = this.Namespace = {};
 
-// this is known as a module?
 var Singleton = Namespace.Singleton = (function(){
-	// private method that will be accessible only within this closure
+	// A private method that will be accessible only within this closure
 	var privateMethod = function() {
 		console.log("private method");
 	};
-	// interface to return as public
+	// Our *interface* to return as public
 	return {
 		publicMethod:function(){
 			console.log("public method");
