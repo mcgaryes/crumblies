@@ -15,5 +15,5 @@ The singleton pattern is actually quite easy accomplish with JavaScript as you a
 ### Resources
 
 * [Annotated Source Code](http://emcgary.r1l4b.com/discussions/00X_X.html)
-* [GitHub](https://github.com/mcgaryes/crumblies/blob/master/js101/discussions/00X/)
+* [GitHub](https://github.com/mcgaryes/crumblies/blob/master/js101/discussions/005/)
 * [JSBin](http://jsbin.com/irojas/1/edit)
