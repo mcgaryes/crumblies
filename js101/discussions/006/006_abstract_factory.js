@@ -6,7 +6,7 @@ var AFE = this.AFE = {};
 // for this example we're always going to be creating a type of object based off of this global variable. Whether we create a ConcreateProductA or a ConcreteProductB will be decided in the abstract factory by whether or not this global variable is set to `A` or `B`. This will make more sense as we look at the actual implementation of our `AbstractFactory` object.
 var globalVariable = "A";
 
-// one thing to note is that because we are passing object as variable through our concrete and abstract modules the ordering of code needs to be set up in a certain order. This is why the concrete implementation are listed before their abstract implementations. As well as why the abstract products are listed before the abstract factory. If you were using a module loader like say Require, where dependencies are managed by the loader, this would not be nessisary.
+// one thing to note is that because we are passing object as variable through our concrete and abstract modules the ordering of code needs to be set up in a certain order. This is why the concrete implementation are listed before their abstract implementations. As well as why the abstract products are listed before the abstract factory. If you were using a module loader like say Require, where dependencies are managed by the loader, this would not be necessary.
 
 // here we create out concrete implementations of our product A and product B objects.
 var ConcreteProductA = function(){};
@@ -60,14 +60,14 @@ var AbstractFactory = (function(AbstractProductA, AbstractProductB){
 			return AbstractProductB.createProduct();
 		}
 	}
-	// our interface that we're exposing to the rest of the applicaiton
+	// our interface that we're exposing to the rest of the application
 	root.AbstractFactory = {
 		createProduct:createProduct
 	};
 }).call(AFE,AbstractProductA,AbstractProductB);
 
 // now that we have our Abstract Factory pattern in place we simple call the create product method through it and are returned a concrete implementation based on the global variables value.
-// We're referencing the AbstractFactory through our namespace because the module purposly doesnt return anything, rather just sets itself on the namespace.
+// We're referencing the AbstractFactory through our namespace because the module purposely doesn't return anything, rather just sets itself on the namespace.
 console.log(AFE.AbstractFactory.createProduct().name);
 
 // So why is this pattern important? From this example you could just as easily take the code in the AbstractFactory's createProduct method and place it wherever you needed to create either the concrete product A or B. But say for example that you had more than just A and B, Say you have products that ranged from A to F, and there was more than just one place in your application where you wanted to instantiate these products. Now your duplicating code and have conditional code in multiple places rather than one. Also say that somewhere down the line you needed to add product G and H to the mix. You would essentially have to augment the code in more than one place. 
