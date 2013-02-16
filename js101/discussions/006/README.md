@@ -1,4 +1,4 @@
-# Discussion 00X - X
+# Discussion 006 - Abstract Factory
 
 ### Overview
 
