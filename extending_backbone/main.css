@@ -1,0 +1,30 @@
+ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+li {
+	background-color: #abcdef;
+	color:#fff;
+	width:320px;
+	height:44px;
+	padding:0;
+	margin:0;
+	border-bottom:1px solid #666;
+	line-height: 44px;
+}
+
+li:first-child {
+	border-top:1px solid #666;
+}
+
+a {
+	text-decoration: none;
+	color:#333;
+	margin-left: 20px;
+}
+
+a:visited {
+	color:#333;
+}
