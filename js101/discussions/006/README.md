@@ -19,8 +19,6 @@ So these are your players...
 * Client
 	* Uses only the interfaces defined by the AbstractFactory and ConcreteFactory and has no knowledge of the objects inner workings or additional functionality.
 
-In this weeks discussion we're going to look at an example that...
-
 ### Discussion Questions
 
 * After reading through the annotaed source code, what kinds of real world development problems could this help you solve. 

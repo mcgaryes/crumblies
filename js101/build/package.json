@@ -12,6 +12,7 @@
     "email": "mcgaryes@gmail.com"
   }],
   "devDependencies": {
+    "grunt": "~0.3.x",
     "grunt-contrib-copy": "0.3.x",
     "grunt-contrib-compress":"0.3.x",
     "grunt-docco":"0.1.2"
