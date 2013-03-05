@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+		<!-- Libraries -->
+		<script type="text/javascript" src="libs/jquery.js"></script>
+
+		<!-- Source -->
+		<script type="text/javascript" src="proxy.js"></script>
+
+	</head>
+
+	<body>
+
+		<button onclick="getRareData();">Get Rare Data</button>
+
+		<!-- Implementation -->
+		<script type="text/javascript">
+
+			var proxy = new Proxy({
+				root:"http://localhost:8889/"
+			});
+
+			function getRareData() {
+				proxy.get({ root:"data", id:"data", data:{ total:5 } },function(data){
+					console.log(data[0].foo.bar);
+				},this);
+			}
+
+			proxy.get({ id:"data", data:{ total:5 } },function(data){
+				console.log(data.data[0].foo.bar);
+			},this);
+
+		</script>
+
+	</body>
+	
+</html>
