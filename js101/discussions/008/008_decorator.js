@@ -7,12 +7,12 @@ var Vehicle = function(protoProps){
 	}
 };
 
-// The Vehicle's simple prototype object that makes every inhereting object grey by default.
+// The Vehicle's simple prototype object that makes every inheriting object grey by default.
 Vehicle.prototype = {
 	color:"grey"
 };
 
-// In this discussion we'll be creating decorators that we'll aply to our `Car` instance. One decorator to optionally add power windows, one for keyless entry and one to make the car an automatic. Each of these is passed a single argument which is the `Car` instance that we are wanting to decorate.
+// In this discussion we'll be creating decorators that we'll apply to our `Car` instance. One decorator to optionally add power windows, one for keyless entry and one to make the car an automatic. Each of these is passed a single argument which is the `Car` instance that we are wanting to decorate.
 
 // You may be asking yourself, why not just create new prototype/constructor pairs for each of the different options. For instance we could have a prototype called CarWithPowerWindows or CarWithKeylessEntry. This may work in simple cases, but what happens when you want a car with both power windows and keyless entry? You'd end up writing an object like CarWithPowerWindowAndKeylessEntry. Say we wanted to add an automatic transmission into the mix... CarWithPowerWindowAndKeylessEntryAndAutomaticTransmission :( Things can escalate quite quickly!
 
@@ -20,7 +20,7 @@ Vehicle.prototype = {
 
 // Instead of inheritance we can assign different properties and actions through decorator methods.
 
-// So with this in mind lets write our Car prototype. This prototype is a bit more robust than you could potentially need, but by adding the second property, `decorators`, an array of decorations to apply to the instance, you can quickly itterate and add listed decorations to an instance.
+// So with this in mind lets write our Car prototype. This prototype is a bit more robust than you could potentially need, but by adding the second property, `decorators`, an array of decorations to apply to the instance, you can quickly iterate and add listed decorations to an instance.
 
 var Car = function(protoProps,decorators){
 	
@@ -31,7 +31,7 @@ var Car = function(protoProps,decorators){
 	for (var i = 0; i < decorators.length; i++) {
 		var method = this[decorators[i]];
 	
-		// This should pretty self explanitory, but what we're essentially doing here is checking to see if the current item being iterated over is in fact a method on our instance's prototype object. If it is then we're calling it and setting its context to the current instance.
+		// This should pretty self explanatory, but what we're essentially doing here is checking to see if the current item being iterated over is in fact a method on our instance's prototype object. If it is then we're calling it and setting its context to the current instance.
 		if(typeof(method) == "function") {
 			method.call(this);
 		}

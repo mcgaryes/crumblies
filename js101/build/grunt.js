@@ -16,7 +16,8 @@ module.exports = function(grunt) {
                     '../discussions/004/004_chaining.js',
                     '../discussions/005/005_singleton.js',
                     '../discussions/006/006_abstract_factory.js',
-                    '../discussions/007/007_composite.js'
+                    '../discussions/007/007_composite.js',
+                    '../discussions/008/008_decorator.js'
                 ],
                 options: {
                     output: '../docs/'
