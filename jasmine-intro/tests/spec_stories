@@ -1,4 +1,0 @@
-The proxy service initializes correctly
-The proxy service 'get' functionality should parse request data correctly
-The proxy service 'get' functionality should create the request url correctly
-The proxy service 'get' functionality should parse request response data correctly
